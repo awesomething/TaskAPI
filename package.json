@@ -1,0 +1,37 @@
+{
+  "name": "taskie",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --require test/setup.js --watch",
+    "dev": "nodemon src/server.js",
+    "migrate": "postgrator --config postgrator-config.js",
+    "start": "node src/server.js",
+    "predeploy": "npm audit",
+    "deploy": "git push heroku master"
+  },
+  "keywords": [],
+  "engines": {
+  "node": "10.11.0"
+  },
+  "author": "Thomas `tomatao` Hudspith-Tatham <iammotivated@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "knex": "^0.95.4",
+    "morgan": "^1.10.0",
+    "pg": "^8.6.0",
+    "postgrator-cli": "^4.0.0",
+    "xss": "^1.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "supertest": "^3.3.0"
+  }
+}
