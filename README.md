@@ -8,6 +8,33 @@ Live version: (https://thumbtask-awesomething.vercel.app/)
 
 If you've been dreaming of achieving those goals, but you still have yet to achieve them, what's stopping you? If it's sheer lack of willpower, create your list of goals with ThumbTask and make that dream come to fruition! 
 
+<h3>Screenshots</h3>
+
+<il>
+
+
+ ### About Page
+
+ ![about](https://github.com/awesomething/ThumbTask/blob/main/images/About.jpg) 
+
+
+### Task Page
+
+![Post](https://github.com/awesomething/ThumbTask/blob/main/images/Create.jpg) 
+
+
+### Achievement Page
+
+![List](https://github.com/awesomething/ThumbTask/blob/main/images/Checked.jpg) 
+
+<h3> How Does ThumbTask Work?</h3>
+
+<p> STEP 1 - Write down and save your tasks with us. </p>
+
+<p> STEP 2 - Get organized and track progress easily.</p>
+
+<p>STEP 3 - Meet your goals weekly and reward yourself.</p>
+
 The app separates tasks into 3 main categories: 
 * Incompleted 
 * Completed
