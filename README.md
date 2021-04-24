@@ -8,7 +8,7 @@ Live version: (https://thumbtask-awesomething.vercel.app/)
 
 If you've been dreaming of achieving those goals, but you still have yet to achieve them, what's stopping you? If it's sheer lack of willpower, create your list of goals with ThumbTask and make that dream come to fruition! 
 
-The app separates tasks into 2 main categories: 
+The app separates tasks into 3 main categories: 
 * Incompleted 
 * Completed
 * All
