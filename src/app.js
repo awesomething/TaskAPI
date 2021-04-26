@@ -6,12 +6,21 @@ const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const errorHandler = require('./middleware/error-handler')
 const app = express()
+const TodosRouter = require('./todos/todos-router')
 
 const {CLIENT_ORIGIN} = require('./config');
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+app.use('/todos', TodosRouter)
+
 app.use(
     cors({
-      origin: 'http://localhost:3000'
+      origin: '*'
     })
 );
 
@@ -22,7 +31,11 @@ const morganOption = (NODE_ENV === 'production')
 app.use(morgan(morganOption, {
   skip: () => NODE_ENV === 'test',
 }))
-app.use(cors())
+
+app.get("/api", (req, res) => {
+  res.send("Hello, world!");
+});
+
 app.use(helmet())
 
 app.use(express.static('public'))
